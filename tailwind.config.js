@@ -35,6 +35,12 @@ module.exports = {
       boxShadow: {
         "primary-btn": "0 5px 20px rgba(2, 108, 255, 0.3)",
       },
+      width: {
+        12.5: "3.125rem",
+      },
+      height: {
+        0.9: "0.9px",
+      },
     },
   },
   variants: {
