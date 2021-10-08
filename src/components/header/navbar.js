@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Hamburger from "../../images/icons/icon-hamburger.svg";
+import Hamburger from "../../assets/icons/icon-hamburger.svg";
+import Button from "../../components/button";
 function Navbar() {
+  // todo useState isHidden digunakan untuk hamburger icon dimana ketika di klik pada mobile responsive akan memunculkan navbar
   const [isHidden, setHidden] = useState(false);
   return (
-    <nav className="container mx-auto flex md:flex-row flex-col justify-between md:px-40 py-8">
+    <nav className="container mx-auto flex md:flex-row flex-col justify-between py-8">
       <div className="flex justify-between">
         <span className="text-blue-secondary font-primary font-bold text-2xl">
           NPE<span className="text-blue-primary">Digital</span>{" "}
         </span>
         <div className="flex md:hidden">
-          <button className="" onClick={() => setHidden(!isHidden)}>
-            <img src={Hamburger} alt="HamburgerIcon" />
-          </button>
-          {/* <button onClick={() => console.log(isHidden)}>test</button> */}
+          {/* //todo tombol untuk di click pada navbar ketika di mobile responsive */}
+          {/* //todo Menggunakan Component Button */}
+          {/* //todo setHidden(!isHidden) artinnya ketika di klik maka nilai nya akan berubah true false true false */}
+          <Button
+            onClick={() => setHidden(!isHidden)}
+            iconImg={Hamburger}
+            btnType="icon"
+          />
         </div>
       </div>
       <div
