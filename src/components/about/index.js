@@ -10,7 +10,7 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center  md:ml-20">
         <div className="flex items-end">
-          <h3 className=" font-primary font-medium ">About Us</h3>
+          <h3 className=" font-primary font-medium md:text-xl">About Us</h3>
           <span className="w-20 bg-black h-0.9 ml-2"></span>
         </div>
         <h1 className="font-primary mt-2.5 font-bold text-blue-secondary text-2.5xl md:text-5xl md:mt-7.5">
