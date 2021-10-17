@@ -1,9 +1,10 @@
 import React from "react";
-import WebApp from "../../assets/images/website.png";
-import AndroidApp from "../../assets/images/mobile_app.png";
-import DesignIntefrace from "../../assets/images/uiux.png";
-import DesktopApp from "../../assets/images/desktop_app.png";
+import WebApp from "../../assets/illustrations/website_ic.svg";
+import AndroidApp from "../../assets/illustrations/mobile_ic.svg";
+import DesignIntefrace from "../../assets/illustrations/desktop_ic.svg";
+import DesktopApp from "../../assets/illustrations/uiux_ic.svg";
 
+// todo data untuk layanan yang disediakan
 const data = [
   {
     id: 1,
@@ -36,21 +37,26 @@ const data = [
 ];
 
 const card = () => {
+  // todo Menampung gambar yang di import ke dalam array karena gambar yang diimport berada dalam bentuk objek maka tampung ke dalam array
   const image = [WebApp, AndroidApp, DesignIntefrace, DesktopApp];
-  const ColStart = [8, 1, 5, 9];
-  const ColEnd = [9, 4, 8, 12];
+
+  // todo Grid Column Start
+  const ColStart = [1, 4, 7, 10];
+
+  // todo Grid Column End
+  const ColEnd = [3, 6, 9, 12];
   return data.map((res, index) => {
-    console.log(res.img);
     return (
       <div
-        className={`card bg-white w-72.5 shadow-xl rounded-2.5xl md:col-start-${ColStart[index]} md:col-end-${ColEnd[index]} my-12.5`}
+        className={`card bg-white w-72.5 md:col-start-${ColStart[index]} md:col-end-${ColEnd[index]} mt-16.5`}
+        key={res.id}
       >
-        <div className="card-image w-full">
-          <img src={image[index]} alt="Website Developer" className="w-full" />
+        <div className="card-image flex justify-center">
+          <img src={image[index]} alt="Website Developer" className="" />
         </div>
-        <div className="px-5 pb-5">
+        <div className="flex px-5 justify-center flex-col items-center mt-7.5">
           <h4 className="font-primary font-medium text-2.5xl">{res.name}</h4>
-          <p className="font-secondary text-gray-text mt-5">
+          <p className="font-secondary text-center text-gray-text mt-2.5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam
             consectetur{" "}
           </p>
