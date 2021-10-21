@@ -3,7 +3,7 @@ import Card from "../services/card";
 
 const index = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 mt-12.5 md:mt-20">
+    <div className="grid grid-cols-1 md:grid-cols-12 mt-17.5 md:mt-20">
       <div className="md:col-span-12 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <h3 className=" font-primary font-medium md:text-xl">Our Services</h3>

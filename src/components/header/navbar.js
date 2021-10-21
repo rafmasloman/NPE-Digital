@@ -27,7 +27,11 @@ function Navbar() {
           isHidden ? "flex" : "hidden"
         } md:flex md:flex-row flex-col font-primary md:items-center mt-5 md:mt-0`}
       >
-        <Link className="text-blue-secondary md:px-10 py-4 md:py-0" to="#">
+        <Link
+          className="text-blue-secondary md:px-10 py-4 md:py-0"
+          to="#"
+          onClick={(e) => console.log("hello")}
+        >
           Home
         </Link>
 

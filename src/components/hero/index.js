@@ -4,7 +4,7 @@ import HeroImageMobile from "../../assets/images/hero image mobile.jpg";
 import Button from "../../components/button";
 const Hero = () => {
   return (
-    <div className="container mx-auto  mt-12.5 md:flex">
+    <div className="container mx-auto mt-12.5 md:mt-24 md:flex">
       <div className="flex flex-col justify-center">
         <h1 className="font-primary font-bold text-blue-secondary text-2.5xl md:text-5xl ">
           Bangun{" "}

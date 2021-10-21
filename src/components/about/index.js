@@ -3,7 +3,7 @@ import AboutImageMobile from "../../assets/images/about-image-mobile.jpg";
 import AboutImage from "../../assets/images/about-image.png";
 const About = () => {
   return (
-    <div className="container mx-auto mt-12.5 md:grid md:grid-cols-2 ">
+    <div className="container mx-auto mt-17.5 md:grid md:grid-cols-2 ">
       {/* //todo Image ketika responsive nya > 375px */}
       <div className="hidden md:grid w-full">
         <img src={AboutImage} alt="TeamWorkPicture" className="" />
