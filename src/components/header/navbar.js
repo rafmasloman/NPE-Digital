@@ -6,12 +6,11 @@ function Navbar() {
   // todo useState isHidden digunakan untuk hamburger icon dimana ketika di klik pada mobile responsive akan memunculkan navbar
   const [isHidden, setHidden] = useState(false);
 
+  // todo function yang digunakan untuk menghandel scroll ketika di click
   const handleScroll = (e) => {
-    // console.log(
-    //   e.target.parentElement.parentElement.nextSibling.nextSibling.offsetTop
-    // );
     e.preventDefault();
     let target = e.target.getAttribute("href");
+
     target = target.split("/");
     target[0] = ".";
 
@@ -70,9 +69,14 @@ function Navbar() {
         </Link>
       </div>
       <div className={` ${isHidden ? "flex" : "hidden"}  md:flex items-center`}>
-        <Link className="font-primary text-blue-secondary py-4 md:py-0" to="#">
+        <a
+          href="https://wa.me/6281342777362"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-primary text-blue-secondary py-4 md:py-0"
+        >
           Contact Us
-        </Link>
+        </a>
       </div>
     </nav>
   );
