@@ -31,6 +31,7 @@ module.exports = {
         17.5: "4.375rem",
         7.5: "1.875rem",
         16.5: "4.375rem",
+        37.5: "9.375rem",
       },
       borderRadius: {
         "2.5xl": "1.25rem",
