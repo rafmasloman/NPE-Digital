@@ -23,7 +23,7 @@ function Navbar() {
     });
   };
   return (
-    <nav className="container mx-auto flex md:flex-row flex-col justify-between py-8">
+    <nav className="container mx-auto flex md:flex-row flex-col justify-between py-8 md:px-40">
       <div className="flex justify-between">
         <span className="text-blue-secondary font-primary font-bold text-2xl">
           NPE<span className="text-blue-primary">Digital</span>{" "}
@@ -54,18 +54,18 @@ function Navbar() {
 
         <Link
           className="text-blue-secondary md:px-10 py-4 md:py-0"
-          to="/services"
-          onClick={handleScroll}
-        >
-          Our Services
-        </Link>
-
-        <Link
-          className="text-blue-secondary md:px-10 py-4 md:py-0"
           to="/about"
           onClick={handleScroll}
         >
           About
+        </Link>
+
+        <Link
+          className="text-blue-secondary md:px-10 py-4 md:py-0"
+          to="/services"
+          onClick={handleScroll}
+        >
+          Our Services
         </Link>
       </div>
       <div className={` ${isHidden ? "flex" : "hidden"}  md:flex items-center`}>

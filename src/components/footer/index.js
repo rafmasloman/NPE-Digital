@@ -31,7 +31,7 @@ const Footer = () => {
   ];
   const [footer, setFooter] = useState(data);
   return (
-    <div className="grid grid-cols-12 gap-6 bg-blue-secondary  w-full absolute left-0 px-5 mt-17.5 py-12.5 md:px-40 md:mt-37.5">
+    <div className="footer grid grid-cols-12 gap-6 bg-blue-secondary  absolute left-0 px-5 mt-17.5 py-12.5 md:px-40 md:mt-37.5">
       <div className="footer-content  col-span-12 md:col-span-3">
         <span className="text-white font-primary font-bold text-2xl">
           NPE <span className="text-blue-primary">Digital</span>{" "}

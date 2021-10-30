@@ -48,7 +48,7 @@ const card = () => {
   return data.map((res, index) => {
     return (
       <div
-        className={`card bg-white w-72.5 md:col-start-${ColStart[index]} md:col-end-${ColEnd[index]} mt-16.5`}
+        className={`card bg-white w-72.5 p-5 md:col-start-${ColStart[index]} md:col-end-${ColEnd[index]} mt-16.5 hover:bg-white rounded-3xl hover:shadow-2xl`}
         key={res.id}
       >
         <div className="card-image flex justify-center">

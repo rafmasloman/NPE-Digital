@@ -5,7 +5,7 @@ import Hero from "./containers/Hero";
 import Services from "./containers/Service";
 function App() {
   return (
-    <div className="px-7.5 mb-20 md:px-40 relative">
+    <div className="px-7.5 mb-20  relative">
       <Header />
       <Hero />
       <About />

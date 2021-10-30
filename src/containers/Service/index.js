@@ -3,7 +3,7 @@ import Card from "../../components/Card/card";
 
 const index = () => {
   return (
-    <div className="services grid grid-cols-1 md:grid-cols-12 mt-17.5 md:mt-37.5">
+    <div className="services container mx-auto grid grid-cols-1 md:grid-cols-12 mt-17.5 md:mt-37.5">
       <div className="md:col-span-12 flex flex-col items-center">
         <div className="flex flex-col items-center">
           <h3 className=" font-primary font-medium md:text-xl">Our Services</h3>
@@ -19,7 +19,9 @@ const index = () => {
           porttitor
         </p> */}
       </div>
-      <Card />
+      <div className="grid col-span-12 gap-5 justify-self-center">
+        <Card />
+      </div>
     </div>
   );
 };
